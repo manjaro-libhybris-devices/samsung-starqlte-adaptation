@@ -1,0 +1,9 @@
+[Unit]
+Description=samsung starqlte adaptation service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/samsung-starqlte-adaptation
+
+[Install]
+WantedBy=default.target
