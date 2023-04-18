@@ -25,8 +25,8 @@ package() {
     mkdir -p "${pkgdir}/usr/lib/sysusers.d/"
     install -Dm644 "${srcdir}/samsung-starqlte-adaptation/android.conf" -t "${pkgdir}/usr/lib/sysusers.d/"
 
-    cp -r "${srcdir}/xiaomi-miatoll-adaptation/droid-vendor-overlay" -t "${pkgdir}/usr/lib/"
-    cp -r "${srcdir}/xiaomi-miatoll-adaptation/droid-system-overlay" -t "${pkgdir}/usr/lib/"
+    cp -r "${srcdir}/samsung-starqlte-adaptation/droid-vendor-overlay" -t "${pkgdir}/usr/lib/"
+    cp -r "${srcdir}/samsung-starqlte-adaptation/droid-system-overlay" -t "${pkgdir}/usr/lib/"
 
     mkdir -p ${pkgdir}/etc/phosh/
     install -Dm644 "${srcdir}/samsung-starqlte-adaptation/phoc.ini" -t "${pkgdir}/etc/phosh/"
@@ -42,7 +42,7 @@ package() {
     install -Dm644 "${srcdir}/samsung-starqlte-adaptation/flashlight-perm.service" "${pkgdir}/usr/lib/systemd/system/"
 
     mkdir -p "${pkgdir}/var/lib/bluetooth/"
-    install -Dm644 "${srcdir}/xiaomi-dandelion-adaptation/board-address" -t "${pkgdir}/var/lib/bluetooth/"
+    install -Dm644 "${srcdir}/samsung-starqlte-adaptation/board-address" -t "${pkgdir}/var/lib/bluetooth/"
 
     mkdir -p "${pkgdir}/usr/share/glib-2.0/schemas/"
     install -Dm644 "${srcdir}/samsung-starqlte-adaptation/90_manjaro.gschema.override" -t "${pkgdir}/usr/share/glib-2.0/schemas/"
