@@ -43,7 +43,4 @@ package() {
 
     mkdir -p "${pkgdir}/var/lib/bluetooth/"
     install -Dm644 "${srcdir}/samsung-starqlte-adaptation/board-address" -t "${pkgdir}/var/lib/bluetooth/"
-
-    mkdir -p "${pkgdir}/usr/share/glib-2.0/schemas/"
-    install -Dm644 "${srcdir}/samsung-starqlte-adaptation/90_manjaro.gschema.override" -t "${pkgdir}/usr/share/glib-2.0/schemas/"
 }
